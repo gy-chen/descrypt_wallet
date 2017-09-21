@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Wallet File Decrypt Result</title>
+</head>
+<body>
+	<h1>Wallet File Decrypt Result</h1>
+	<div th:if="${error}">
+		<p class="error">
+			Error: <span th:text="${error}"></span>
+		</p>
+	</div>
+	<div th:if="${result}">
+		<p>
+			Your private key: <span th:text="${result}"></span>
+		</p>
+	</div>
+	<a href="descrypt_wallet">back</a>
+</body>
+</html>
